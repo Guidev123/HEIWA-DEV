@@ -14,12 +14,12 @@ import { Button } from "@/components/ui/button";
   export default function Membros() {
     return (
       <main>
+      <div className="flex items-center justify-between">
         <h1 className="text-primary">Membros Antigos</h1>
-        <div className="flex justify-right">
-          <Link href={"/membros"}>
-            <Button size={"lg"}>Membros Atuais</Button>
-          </Link>
-        </div>
+        <Link href={"/membros"}>
+          <Button size={"lg"}>Membros Atuais</Button>
+        </Link>
+      </div>
         <br></br>
         <div className="grid grid-cols-3 gap-4">
           {members

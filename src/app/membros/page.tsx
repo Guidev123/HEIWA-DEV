@@ -14,8 +14,8 @@ import { Button } from "@/components/ui/button";
 export default function Membros() {
   return (
     <main>
-      <h1 className="text-primary">Membros Atuais</h1>
-      <div className="flex justify-right">
+      <div className="flex items-center justify-between">
+        <h1 className="text-primary">Membros Atuais</h1>
         <Link href={"/membros-antigos"}>
           <Button size={"lg"}>Membros Antigos</Button>
         </Link>
@@ -23,7 +23,7 @@ export default function Membros() {
       <br></br>
       <div className="grid grid-cols-3 gap-4">
         {members
-          .filter((member) => member.ativo) 
+          .filter((member) => member.ativo)
           .map((member) => (
             <Card key={member.id} className="flex flex-col items-center">
               <CardHeader className="items-center gap-2">
