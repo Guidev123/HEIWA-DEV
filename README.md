@@ -1,5 +1,5 @@
 <h1>Web site do Projeto HEIWA</h1>
 
-<h2>Desenvolvido com React.js e Next.js</h2>
+<p>Desenvolvido com React.js e Next.js</p>
 
 https://heiwa-website.vercel.app
